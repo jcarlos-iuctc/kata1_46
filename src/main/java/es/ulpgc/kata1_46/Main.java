@@ -1,16 +1,15 @@
 package es.ulpgc.kata1_46;
 
-import java.util.Calendar;
+import java.time.LocalDate;
+import java.time.Month;
 
 public class Main {
 
     public static void main(String[] args) {
-        
-        Calendar birthdate = Calendar.getInstance();
-        birthdate.set(1980, 1, 1);        
+               
+        LocalDate birthdate = LocalDate.of(1980, Month.JANUARY,1 );        
         Person person = new Person("Antonio", birthdate);
-        System.out.println(person.getName() + " tiene " + person.getAge() + ".");
-                
+        System.out.println(person.getName() + " tiene " + person.getAge() + ".");                
         
     }
     
